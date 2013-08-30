@@ -108,10 +108,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/lge/geeb/gps.conf:system/etc/gps.conf
 
-# vold configuration
-PRODUCT_COPY_FILES += \
-        device/lge/geeb/vold.fstab:system/etc/vold.fstab
-
 # NFC packages
 PRODUCT_PACKAGES += \
     libnfc \
