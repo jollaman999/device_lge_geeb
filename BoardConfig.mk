@@ -46,6 +46,9 @@ TARGET_KERNEL_SOURCE := kernel/lge/geeb
 TARGET_KERNEL_CONFIG := geeb_f_defconfig
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro/bin/arm-linux-gnueabihf-
 
+# Use JWR66Y kernel compatibility fix
+TARGET_USE_JWR66Y := true
+
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_LEGACY_ALSA_AUDIO:= false
 BOARD_USES_FLUENCE_INCALL := true
