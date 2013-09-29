@@ -44,7 +44,7 @@ TARGET_OTA_ASSERT_DEVICE := mako,geeb,gee_a,e970,gee,geebus
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/lge/geeb
 TARGET_KERNEL_CONFIG := geeb_defconfig
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.8/bin/arm-linux-gnueabihf-
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro/bin/arm-linux-gnueabihf-
 
 # Use JWR66Y kernel compatibility fix
 TARGET_USE_JWR66Y := true
