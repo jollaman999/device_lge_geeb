@@ -32,8 +32,8 @@ PRODUCT_PACKAGES := \
 	lights.geeb
 
 PRODUCT_PACKAGES += \
-    charger_res_images \
-    charger
+        charger_res_images \
+        charger
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
@@ -110,11 +110,11 @@ PRODUCT_COPY_FILES += \
 
 # NFC packages
 PRODUCT_PACKAGES += \
-    libnfc \
-    libnfc_jni \
-    Nfc \
-    Tag \
-    com.android.nfc_extras
+        libnfc \
+        libnfc_jni \
+        Nfc \
+        Tag \
+        com.android.nfc_extras
 
 # NFCEE access control
 #ifeq ($(TARGET_BUILD_VARIANT),user)
@@ -125,10 +125,14 @@ PRODUCT_PACKAGES += \
 
 # NFC access control + feature files + configuration
 PRODUCT_COPY_FILES += \
-    $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml \
-    frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-    frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
+        $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml \
+        frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
+        frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
+        frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
+
+# Copy init.d files
+PRODUCT_COPY_FILES += \
+        device/lge/mako/01mpdecision:system/etc/init.d/01mpdecision
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.opengles.version=196608
@@ -188,7 +192,7 @@ PRODUCT_PACKAGES += \
 # Voice processing
 PRODUCT_PACKAGES += libqcomvoiceprocessing
 PRODUCT_COPY_FILES += \
-    device/lge/geeb/audio_effects.conf:system/vendor/etc/audio_effects.conf
+        device/lge/geeb/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
 PRODUCT_PACKAGES += \
 	hci_qcomm_init
@@ -257,7 +261,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Enable AAC 5.1 output
 PRODUCT_PROPERTY_OVERRIDES += \
-    media.aac_51_output_enabled=true
+        media.aac_51_output_enabled=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
         debug.egl.recordable.rgba8888=1
