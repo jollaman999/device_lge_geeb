@@ -286,9 +286,6 @@ PRODUCT_PACKAGES += qrngd
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.usb.host=1c
 
-PRODUCT_COPY_FILES += \
-        device/lge/geeb/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
-
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 $(call inherit-product, hardware/qcom/msm8960/msm8960.mk)
