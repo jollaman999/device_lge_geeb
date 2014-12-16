@@ -36,7 +36,7 @@
 
 source ../../../common/clear-factory-images-variables.sh
 BUILD=937116
-DEVICE=mako
+DEVICE=geeb
 PRODUCT=occam
 VERSION=kot49h
 SRCPREFIX=signed-
